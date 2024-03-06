@@ -3,7 +3,7 @@ package sec3;
 import java.util.ArrayList;
 import java.util.List;
 
-// class타입의 List Stream 방식 활용
+// class타입의 List Stream 방식 활용 스트림.
 class Visitor {
 	private String name;
 	private int age;
