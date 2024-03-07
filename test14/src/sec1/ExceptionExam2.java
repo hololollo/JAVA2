@@ -5,7 +5,7 @@ public class ExceptionExam2 {
 	public static void main(String[] args) {
 		String name = null;
 		int data; // 초기화 안하고 선언만.
-		//실제 처리할 문장(try)이 예외가 발생하면, 예외처리 문장(catch)을 실행
+		//실제 처리할 문장(try)이 예외가 발생하면, 예외처리 문장(catch)을 실행 1. NullporinterException 변수.printStackTrace();  2. Exception
 		
 		// 다중 catch 문장
 		try { // 실제 처리할 문장

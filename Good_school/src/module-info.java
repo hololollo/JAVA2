@@ -1,0 +1,2 @@
+module Good_school {
+}
