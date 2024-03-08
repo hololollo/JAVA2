@@ -13,7 +13,7 @@ public class LombokExam1 {
 		b1.setTitle("제목");
 		b1.setViewCnt(0);
 		
-		
+		// 출력이 안되는게 정상이다! 나중에 web쓸때 사용한다!
 	}
 
 }
