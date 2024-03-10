@@ -21,23 +21,23 @@ class Outer2 {
 		void inMethod() {
 			System.out.println("내부에서 내부 클래스의 인스턴스 변수 : inNum = " + inNum);
 			System.out.println("내부에서 내부 클래스의 정적 멤버 변수 : sInNum = " + sInNum);
-			// System.out.println("내부에서 외부 클래스의 인스턴스 변수 : num = " + num); => 인스턴스를 만들지 않았기 때문에.
-			System.out.println("내부에서 외부 클래스의 정적 멤버 변수 : sNum = " + sNum);
+			// System.out.println("내부에서 외부 클래스의 인스턴스 변수 : num = " + num); => 인스턴스를 만들지 않았기 때문에.(private)
+			System.out.println("내부에서 외부 클래스의 정적 멤버 변수 : sNum = " + sNum); // (static)
 		}
 	}
 	// 외부 클래스의 정적 메서드
 	static void outMethod() { 
-		//System.out.println("외부에서 내부 클래스의 인스턴스 변수 : inNum = " + inNum);
+		//System.out.println("외부에서 내부 클래스의 인스턴스 변수 : inNum = " + inNum); // inner명명 불가능(private)
 		System.out.println("외부에서 내부 클래스의 정적 멤버 변수 : sInNum = " + Inner.sInNum);
-		//System.out.println("외부에서 외부 클래스의 인스턴스 변수 : num = " + num); 
-		System.out.println("외부에서 외부 클래스의 정적 멤버 변수 : sNum = " + sNum);
+		//System.out.println("외부에서 외부 클래스의 인스턴스 변수 : num = " + num); // private
+		System.out.println("외부에서 외부 클래스의 정적 멤버 변수 : sNum = " + sNum); // static
 	}
 }
 public class StaticInnerClassExam {
 
 	public static void main(String[] args) {
-		Outer2 out = new Outer2(); // 외부 클래스의 인스턴스
-		// out.outMethod(); // static(정적)메서드이므로 객체를 생성하지 않고 실행  
+		Outer2 out = new Outer2(); // 외부 클래스의 인스턴스(객체) 생성
+		// out.outMethod(); // static(정적)메서드이므로 객체에 구애받지않고 실행  
 		Outer2.outMethod();
 		// Outer2.Inner.inMethod(); // inMethod()는 인스턴스 메서드이므로 정적 클래스인 Inner를 실행할 수 없음.
 		// out.Inner.inMethod(); // Inner가 정적 클래스이므로 out인스턴스를 생성하지 않고 Outer2를 활용해야 한다.
