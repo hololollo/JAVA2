@@ -17,7 +17,7 @@ public class StreamExam {
 		int sum = Arrays.stream(arr).sum(); // 배열을 활용하는것도 가능하다.
 		System.out.println("arr의 합계 : " + sum);
 		
-		OptionalDouble avg = Arrays.stream(arr).average(); // 실수가 나올수도 있고 아닐수도 있는 값을 구할 때 사용하는 util
+		OptionalDouble avg = Arrays.stream(arr).average(); // 실수가 나올수도 있고 아닐수도 있는 값을 구할 때 사용하는 util(OptinalDouble)
 		System.out.println("arr의 평균 : " + avg);
 		
 		OptionalInt max = Arrays.stream(arr).max(); 

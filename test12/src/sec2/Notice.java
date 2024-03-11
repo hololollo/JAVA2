@@ -1,5 +1,5 @@
 package sec2;
-
+//ArrayList
 public class Notice {
 	private String title;
 	private String content;

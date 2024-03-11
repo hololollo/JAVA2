@@ -6,14 +6,14 @@ import java.util.List;
 public class TestEx {
 
 	public static void main(String[] args) {
-		 List<Integer> list = new ArrayList<>(); // ArrayList
+		 List<Integer> list = new ArrayList<>(); // ArrayList List는 인터페이스이기 때문에 
 
 	        list.add(4);
 	        list.add(-5);
 	        list.add(0);
 	        list.add(-3);
 	        list.add(2);
-	        list.add(1); // + 한개를 출력하기 위해서 정수 1을 추가한다.
+	        list.add(1); // + 한개를 출력하기 위해서 정수 1로 변경한다.
 	        // list.add(1.23456); // Integer 타입 실수 불가능
 
 	        for (int num : list) {

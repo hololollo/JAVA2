@@ -1,5 +1,5 @@
 package sec2;
-
+//ArrayList
 public class Member {
 	private String name;
 	private int birth;

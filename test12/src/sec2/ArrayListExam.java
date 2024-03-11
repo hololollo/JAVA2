@@ -33,14 +33,14 @@ public class ArrayListExam {
 		// 존재유무 확인 
 		Member tmp1 = new Member("강10", 921021, "gang", "tttt", "kangmh1021@naver.com");
 		System.out.println(tmp1.getId() + "의 존재유무 : " + memList.contains(tmp1));
-		
+		// .contains() : 존재유무 확인 메서드값
 		
 		for(int i = 0; i < memList.size(); i++) {
 			Member m = memList.get(i);
 			System.out.println(m.toString());
 		}
 		
-		// 생성만 해줬고 값을 넣지 않았음. (존재유무 확인)
+		// 생성만 해줬고 값을 넣지 않았음. (존재유무 확인) : isEmpty(값이 비어있는지 여부)
 		if(memList2.isEmpty()) {
 			System.out.println("비어있는 리스트입니다.");
 		}else {
