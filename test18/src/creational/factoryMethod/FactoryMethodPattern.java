@@ -1,4 +1,4 @@
-package factoryMethod;
+package creational.factoryMethod;
 // Factory Method 패턴 : 객체를 만드는 부분을 서브 클래스(Sub Class)에 위임하는 패턴
 // Factory 추상화를 통하여 IDcard 클래스의  Sub Class인 IDCardFactory를 활용하여 IDCard 객체를 생성한다.
 // 부모 추상 클래스(Factory)로  선언하고, 생성은 서브 클래스의 생성자(IDCardFactory)로 생성

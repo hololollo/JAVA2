@@ -1,4 +1,4 @@
-package factoryMethod;
+package creational.factoryMethod;
 // Product 추상 클래스의 객체를 생성하는 Factory 추상 클래스
 // Factory Method 패턴 : Product를 만드는 create()메서드가 있으므로 이러한 것을 Factory Method 패턴이라고 함.
 public abstract class Factory { // 추상체로서 create()메서드를 활용하여 Product를 만듦

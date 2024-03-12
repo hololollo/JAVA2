@@ -1,4 +1,4 @@
-package factoryMethod;
+package creational.factoryMethod;
 // Prodect 추상 클래스
 public class IDCard extends Product {
 

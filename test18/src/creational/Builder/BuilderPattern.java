@@ -1,4 +1,4 @@
-package creationalBuilder;
+package creational.Builder;
 //BuilderPattern : 멤버 필드와 같은 구성원을 하나 하나 쌓아 올려 객체를 생성하는 패턴
 class Student {
 	 int no;
