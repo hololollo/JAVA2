@@ -9,17 +9,27 @@ public class RemoteExam6 {
 			int lightness;
 			int zoom;
 			
-			public void turnOff() { System.out.println("기기 전원 OFF");}
-			public void turnOn() { System.out.println("기기 전원 ON"); }
+			public void turnOff() { 
+				System.out.println("기기 전원 OFF");
+				}
+			public void turnOn() {
+				System.out.println("기기 전원 ON"); 
+				}
 			public void setVolume(int volume) {
-				if(volume > MAX) this.volume = RemoteControl.MAX;
-				else if(volume < MIN) this.volume = RemoteControl.MIN;
-				else this.volume = volume;
+				if(volume > MAX) {
+					this.volume = RemoteControl.MAX;
+				} else if(volume < MIN) {
+					this.volume = RemoteControl.MIN;
+				}else {
+					this.volume = volume;
+				}
 			}
 			
 			public int light() {
 				System.out.println("밝게");
-				if(this.lightness < 255 && this.lightness < 0) this.lightness++;
+				if(this.lightness < 255 && this.lightness < 0) {
+					this.lightness++;
+				}
 				return this.lightness;
 			}
 
@@ -31,13 +41,17 @@ public class RemoteExam6 {
 
 			public int zoomin() {
 				System.out.println("50% 확대");
-				if(zoom>=-500 && zoom<=500)	zoom+=50;
+				if(zoom>=-500 && zoom<=500)	{ 
+					zoom+=50;
+				}
 				return zoom;
 			}
 
 			public int zoomout() {
 				System.out.println("50% 축소");
-				if(zoom>=-500 && zoom<=500)	zoom-=50;
+				if(zoom>=-500 && zoom<=500)	{
+					zoom-=50;
+				}
 				return zoom;
 			}
 		};
