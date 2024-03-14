@@ -23,5 +23,6 @@ public class Test1 {
 				break;
 			} //일치하는 ip 사용자가 없는 경우의 메시지 출력이 없음
 		}
+		System.out.println("일치하는 ip 사용자가 없습니다.");
 	}
 }

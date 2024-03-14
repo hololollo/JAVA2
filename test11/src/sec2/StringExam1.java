@@ -1,4 +1,4 @@
-		package sec2;
+package sec2;
  // ※ 최고중요
 public class StringExam1 {
 
