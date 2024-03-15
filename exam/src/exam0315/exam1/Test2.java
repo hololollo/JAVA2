@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Test2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		List<String>nameList = new ArrayList<String>();
+		List<String>nameList = new ArrayList<String>(); // List는 선언만 가능하고 참조가 불가능하여  nullpointerException 발생
 			
 		while(true) {
 			System.out.println("추가할 이름을 입력하세요 : ");

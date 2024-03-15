@@ -25,7 +25,7 @@ import java.util.Scanner;
 public class TestController {
 	public void test1() {
 		Scanner sc = new Scanner(System.in);
-		String[] personArr = new String[5];
+		String[] personArr = new String[5]; // 5개를 만들도록 선언. 현재 null값.
 		for(int i = 0; i < personArr.length; i++) { // 배열에 lenth()라는 메서드는 없다. ()를 없애야 한다.
 			System.out.print((i+1)+ "번째 주민번호 입력 : "); // i가 0부터이므로 +1을 해줘서 1번째부터로 고칠 수 있다. 단순히 i번재를 1로 고치게 되면 밑에 배열을 사용할 때 -1을 해줘야 하므로.
 			String personId = sc.nextLine(); 

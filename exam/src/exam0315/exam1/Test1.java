@@ -18,21 +18,16 @@ public class Test1 {
 		System.out.print("ip 입력 : ");
 		String ip = sc.next();
 		
-		boolean sw = false; // 추가
-		
 		for(int i = 0; i < ipInfoList.size(); i++) {
 			if(ipInfoList.get(i).getIp().equals(ip)) {
 				System.out.println(ipInfoList.get(i).toString()); // toString 생략 가능
-				sw = true;
-				break;
+				return;
 				} 
 		} 
-		if(!sw) {
 		System.out.println("일치X");
 	// 일치하는 ip 사용자가 없는 경우 메세지 출력이 없음. (boolean sw개념을 이용하자. 그래서 참일경우 출력될수 있게 하고 거짓일경우엔 정상이 아니라고 해주면 된다.)
 		}
 	}
-}
 
 
 
